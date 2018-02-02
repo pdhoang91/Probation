@@ -1,0 +1,127 @@
+Tai project tu tren web github ve may
+==================
+Tao foder va cd toi foder chu project.
+git clone + User SSH
+====================
+sudo apt-get install git
+git --version
+
+git config --global user.name "xuho"
+git config --global user.email "xuanhoa.it.humg@gmail.com"
+
+git status
+
+git add *
+git add <tên file>
+
+git commit -m <Nội dung>
+git commit -m "Chương trình hello world"
+git commit --help
+
+
+Bây giờ ta sẽ kết nối git ở local tới git trên web bằng cách:
+git remote add <tên> <url>
+
+
+Bây giờ ta sẽ kết nối git ở local tới git trên web bằng cách:
+git remote add <tên> <url>
+Trong đó "tên" bạn đặt bất kỳ còn "url" chính là đường link mà bạn vừa copy lúc nãy.
+Ví dụ:
+git remote add myGit https://github.com/xuho/MyRepository.git
+
+git log   : xem lich su commit
+
+
+Tao branch tren local va chuyen qua nhanh nay
+Create the branch on your local machine and switch in this branch :
+$ git checkout -b [name_of_your_new_branch]
+
+Change working branch :
+$ git checkout [name_of_your_new_branch]
+
+Push the branch on github :
+$ git push origin [name_of_your_new_branch]
+
+
+
+When you want to commit something in your branch, be sure to be in your branch.
+Add -u parameter to set upstream.
+You can see all branches created by using :
+$ git branch
+
+Which will show :
+* approval_messages
+  master
+  master_clean
+
+Add a new remote for your branch :
+$ git remote add [name_of_your_remote] 
+
+Push changes from your commit into your branch :
+$ git push [name_of_your_new_remote] [name_of_your_branch]
+
+Update your branch when the original branch from official repository has been updated :
+$ git fetch [name_of_your_remote]
+
+Then you need to apply to merge changes, if your branch is derivated from develop you need to do :
+$ git merge [name_of_your_remote]/develop
+
+Delete a branch on your local filesystem :
+$ git branch -d [name_of_your_new_branch]
+
+To force the deletion of local branch on your filesystem :
+$ git branch -D [name_of_your_new_branch]
+
+Delete the branch on github :
+$ git push origin :[name_of_your_new_branch]
+
+
+=====================================
+
+Fetch the changes from remote repo
+git fetch origin
+
+Merge changes from remote branch to same local branch
+git rebase
+
+Merge changes from release branch to current local branch
+git rebase <release_branch>
+
+Fetch the changes from remote repo and merge it to current branch 
+git pull --rebase origin
+git pull origin CLOUD_1.0_R01
+
+
+==================================================
+
+
+
+
+
+PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$JAVA_HOME/bin"
+JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+http_proxy="http://10.10.10.10:8080/"
+https_proxy="https://10.10.10.10:8080/"
+MAVEN_HOME=/usr/share/maven/apache-maven-3.3.9
+M2_HOME=/usr/share/maven/apache-maven-3.3.9
+ANT_HOME=<ant source directory>/apache-ant-1.9.3
+NG_HOME=<your source directory>/ngnms/src/build/stage/target/package
+NG_SHARED_DIR=<your source directory>/ngnms/src/build/stage/target/package/ng_shared
+NG_IP_ADDRESS=<your ip address>
+PATH="...: $JAVA_HOME/bin:$MAVEN_HOME/bin:$ANT_HOME/bin"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
